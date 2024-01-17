@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lato&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Lato&family=Open+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
+
+/* COMMON CSS AREA */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    font-family: 'Gentium Book Plus', serif;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: middle;
+}
+
+:root {
+    --white: #f4f4ee;
+    --black: #100f10;
+    --golden: #cc9900;
+    --gray: #4c4c4c;
+
+}
+
+/* header & navbar */
+header{
+    background: url("../img/banner.png") no-repeat center;
+    background-size: cover;
+    padding-bottom: 120px;
+    height: 100%;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+.offcanvas{
+    background: var(--black);
+}
+.close{
+    color: white;
+    font-size: 32px;
+}
+.nav-link{
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: 400;
+    margin-left: 50px;
+    opacity: 0.9;
+    position: relative;
+}
+
+.nav-link::after{
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 4px;
+    width: 0;
+    left: 0;
+    top: -30px;
+    transition: 0.5s;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+
+.nav-item:hover .nav-link,
+.menu-icon i:hover {
+    color: var(--white);
+    opacity: 1;
+}
+
+.menu-icon {
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+.menu-icon i {
+    color: var(--golden);
+    font-size: 20px;
+    margin-left: 20px;
+}
+.navbar-toggler{
+    background: var(--bs-white);
+    border: none;
+}
+
+/*----banner----*/
+.banner-area {
+    padding: 120px 0 80px;
+}
+
+.banner-title h1 {
+    color: var(--white);
+    font-size: 90px;
+}
+
+.banner-bottom-line {
+    margin-top: 40px;
+}
+
+.banner-btn {
+    margin-top: 50px;
+}
+
+.banner-btn button {
+    width: 225px;
+    height: 60px;
+    padding: 20px 40px;
+    margin: 0 12px;
+    background: rgba(240, 240, 240, 0.3);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner-btn button:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 1);
+}
+
+/*----about aewa---*/
+.about-area{
+    background: url("../img/bg-about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-details{
+    padding: 100px 0;
+}
+.about-heading h2{
+    color: var(--golden);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-bottom-line img{
+    width: 200px;
+}
+.about-desc{
+   padding-top: 20px;
+    width: 65%;
+}
+.about-desc p{
+    color: var(--gray);
+    font-size: 16px;
+}
+.cooking-sign{
+    margin-top: 50px;
+}
+.about-img{
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+/* ingredients */
+#ingredients{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+    background: url("../img/ingredient-bg.png") no-repeat center;
+    background-size: cover;
+}
+.ingredients-details{
+    background-image: url("../img/ingredient-dark.png");
+    padding: 75px 70px;
+    margin: 95px 0;
+    overflow: hidden;
+}
+.ingredients-details h4{
+    font-size: 35px;
+}
+.ingredients-details p{
+    font-size: 15px;
+    margin-top: 25px;
+    padding-bottom: 72px;
+}
+.spc{
+   margin: 0 10px;
+}
+/*----menu-----*/
+
+.menu-area{
+    background-image: url('../img/menu-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 95px 0;
+}
+
+.menu-details {
+    width: 455px;
+    margin-bottom: 72px;
+}
+.menu-heading h2{
+    font-size: 36px;
+    color: var(--golden)
+}
+.menu-items {
+    list-style: none;
+    margin-top: 28px;
+}
+
+.dish-main-info {
+    font-size: 21px;
+    font-family: "Yeseva One", serif;
+    color: rgb(200, 159, 45);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c89f2d;
+    padding-bottom: 9px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.menu-dish {
+    margin: 0 auto;
+    width: 430px;
+    margin-bottom: 36px;
+}
+
+.dish-description p{
+    color: var(--gray);
+    text-align: left;
+    font-size: 16px;
+}
+
+.special {
+    border: 1px solid #c89f2d;
+    padding: 12px;
+    margin-top: -5px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.special::before {
+    content: url("../img/special.png");
+    display: block;
+    margin-top: -34px;
+    margin-left: 373px;
+}
+
+
+/* menu part css end */
+/* review */
+.review-area{
+    background: url("../img/guest-bg.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.review{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 70px;
+    margin: 100px auto;
+}
+.reservation-img{
+    margin-top: 80px;
+}
+.review-heading h2{
+    font-size: 36px;
+}
+.review-desc{
+    margin: 30px 0 20px;
+}
+.review-desc p{
+    font-size: 22px;
+}
+.review-location p{
+    color: darkgray;
+    opacity: 1;
+}
+/* reservation */
+.reservation-area{
+    background: url("../img/bg-about.png") no-repeat center fixed;
+    background-size: cover;
+    height: 710px;
+}
+.reservation-image {
+    width: 270px;
+    height: 500px;
+    margin-right: 30px;
+}
+
+.reservation-info {
+    width: 430px;
+    margin: 85px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.reservation-article {
+    max-height: 300px;
+    overflow: hidden;
+}
+.revers-desc{
+    margin-top: 30px;
+}
+.reservation-form{
+    margin-top: 40px;
+}
+.reservation-form-item {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.reservation-input {
+    width: 200px;
+    height: 36px;
+    padding: 0 15px;
+    margin-top: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #7c7c7c;
+    outline-color: #c9a131;
+}
+
+.reservation-form-item label {
+    display: block;
+    color: #c9a131;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.reservation-submit-button {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.reservation-submit-button input {
+    width: 200px;
+    height: 36px;
+    background-color: #c9a131;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+    font-style: normal;
+    text-align: center;
+    border: 0px;
+    margin-left: 4px;
+    outline-color: #c9a131;
+}
+
+.reservation-submit-button input:hover {
+    background-color: #886402;
+    transition: 0.5s;
+}
+
+.reservation-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+/* footer */
+.about_us h5 , .hours h5{;
+    font-size: 20px;
+}
+
+/*-----responsive style----*/
+@media screen and (max-width: 992px) {
+    .nav-link::after,
+    .hide{
+        visibility: hidden;
+    }
+}
+@media (min-width: 576px) and (max-width: 766px){
+    .btn-reserve{
+        margin-left: 209px;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px){
+    .home-con-main h1 {
+        font-size: 50px;
+    }
+    .btn-home{
+        margin-bottom: 15px;
+    }
+    .social{
+        padding: 0 0;
+        display: none;
+    }
+    .about_1{
+        padding:0 0 ;
+    }
+    .menu{
+        padding: 0 0;
+    }
+    .btn-reserve{
+        margin: 30px auto;
+    }
+}
+/*-----------------*/
+svg{
+    width: 400px;
+}
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate #man,
+#ku.svgmate .mankauf {
+    animation-name: ekumanslidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px;
+}
+
+#ku.svgmate #Bluearmbot,
+#ku.svgmate #Chair,
+#ku.svgmate #chairbackbar,
+#ku.svgmate .mankauf {
+    animation-duration: 1.5s;
+}
+
+#ku.svgmate #Bluearmbot {
+    animation-name: ekumanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 1.2s;
+    transform-origin: 448.122px 403.482px;
+}
+
+#ku.svgmate .mankauf {
+    animation-name: ekumanhairwobble;
+    animation-duration: 1.38s;
+    transform-origin: 396.257px 260.5px;
+}
+
+#ku.svgmate #Chair_1_,
+#ku.svgmate #Woman,
+#ku.svgmate #back-arm,
+#ku.svgmate #backleg_1_ {
+    animation-name: ekuwomanlidein;
+    animation-iteration-count: 1;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    transform-origin: 502px 454px;
+}
+
+#ku.svgmate #Chair_1_ {
+    animation-duration: 1.95s;
+}
+
+#ku.svgmate #Laptop,
+#ku.svgmate #keyboard {
+    animation-name: kulapdropin;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px;
+}
+
+#ku.svgmate #keyboard {
+    animation-duration: 2.5s;
+    transform-origin: 479.857px 383px;
+}
+
+#ku.svgmate #lowerarm,
+#ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmrotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.8s;
+    animation-delay: 2.1s;
+    animation-timing-function: ease-out;
+    transform-origin: 751.134px 385.578px;
+}
+
+#ku.svgmate #lowervackarm {
+    animation-name: ekuwomanarmbackrotate;
+    transform-origin: 736.882px 386px;
+}
+
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen,
+#ku.svgmate #Man_screen .screenbutton {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 5.6s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 526.882px 383px;
+}
+
+#ku.svgmate #Man_screen .greenscreen,
+#ku.svgmate #Man_screen .redscreen {
+    animation-duration: 3s;
+}
+
+#ku.svgmate #Man_screen .greenscreen {
+    animation-duration: 3.3s;
+}
+
+#ku.svgmate #Man_screen,
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove,
+#ku.svgmate .womscreenmove {
+    animation-name: manscreenfloat;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+}
+
+#ku.svgmate #Man_screen .greenscrmove,
+#ku.svgmate #Man_screen .redskmove {
+    animation-duration: 6s;
+}
+
+#ku.svgmate #Man_screen .greenscrmove {
+    animation-duration: 7.2s;
+}
+
+#ku.svgmate #hairback,
+#ku.svgmate #womanscreen {
+    animation-name: manscreenpopup;
+    animation-iteration-count: 1;
+    animation-duration: 3.9s;
+    animation-timing-function: ease-in-out;
+    transform-origin: 648.689px 361.659px;
+}
+
+#ku.svgmate #hairback {
+    animation-name: backhairwave;
+    animation-iteration-count: infinite;
+    animation-duration: 3.3s;
+    transform-origin: 785.132px 295.833px;
+}
+
+
+@keyframes ekumanslidein {
+    0% {
+        transform: translateX(-600px);
+    }
+    50% {
+        transform: translateX(-600px) scaleX(1);
+    }
+    75% {
+        transform: translateX(30px) scaleX(0.9);
+    }
+    87.5% {
+        transform: translateX(-5px);
+    }
+    97% {
+        transform: translateX(3px);
+    }
+    to {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+@keyframes ekumanarmrotate {
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+        transform: rotate(0deg);
+    }
+    55%,
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes ekumanhairwobble {
+    50%,
+    to {
+        transform: scaleX(1);
+    }
+    75% {
+        transform: scaleX(1.2);
+    }
+    87.5% {
+        transform: scaleX(0.8);
+    }
+    97% {
+        transform: scaleX(1.09);
+    }
+}
+
+@keyframes ekuwomanlidein {
+    0% {
+        transform: translateX(600px);
+    }
+    50% {
+        transform: translateX(600px) scaleX(1);
+    }
+    75% {
+        transform: translateX(-30px) scaleX(0.9);
+    }
+    87.5% {
+        transform: translateX(5px);
+    }
+    97% {
+        transform: translateX(-3px);
+    }
+    to {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+@keyframes kulapdropin {
+    0% {
+        transform: translateY(-230px) scale(0) rotate(0deg);
+    }
+    35% {
+        transform: translateY(-230px) scale(1.03) rotate(20deg);
+    }
+    45% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: translateY(-5px) scale(0.98) rotate(0deg);
+    }
+    55% {
+        transform: translateY(-10px) scale(1.01) rotate(0deg);
+    }
+    60% {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes ekuwomanarmrotate {
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+        transform: rotate(0deg);
+    }
+    55%,
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes ekuwomanarmbackrotate {
+    0%,
+    45%,
+    65%,
+    85%,
+    to {
+        transform: rotate(0deg);
+    }
+    55%,
+    75% {
+        transform: rotate(-13deg);
+    }
+}
+
+@keyframes manscreenpopup {
+    0%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85% {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes manscreenfloat {
+    0%,
+    to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes backhairwave {
+    0%,
+    to {
+        transform: scaleX(1) skewX(0) skewY(0);
+    }
+    50% {
+        transform: scaleX(1.07) skewX(3deg) skewY(5deg);
+    }
+}
